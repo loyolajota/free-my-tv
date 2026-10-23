@@ -19,7 +19,7 @@ jobs:
           $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "build-tools;34.0.0" "platforms;android-34"
           chmod +x build.sh
           ./build.sh || true
-          sed -i "s|^tmdb_key=.*|tmdb_key=$TMDB|; s|^tmdb_region=.*|tmdb_region=BR|; s|^latitude=.*|latitude=-23.5505|; s|^longitude=.*|longitude=-46.6333|; s|^city=.*|city=São Paulo|" config.properties
+          sed -i "s|^tmdb_key=.*|tmdb_key=$TMDB|; s|^tmdb_region=.*|tmdb_region=BR|; s|^latitude=.*|latitude=-22.9858|; s|^longitude=.*|longitude=-43.2490|; s|^city=.*|city=Rio de Janeiro|" config.properties
           ./build.sh
       - name: Publicar
         env:
